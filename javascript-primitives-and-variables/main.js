@@ -1,0 +1,15 @@
+const fullName = 'James Aguirre';
+const isCool = false;
+const totalPets = 1;
+console.log('full name: ' + fullName);
+console.log('is cool: ' + isCool);
+console.log('total pets: ' + totalPets);
+console.log('The type of full name: ', typeof fullName);
+console.log('The type of is cool: ', typeof isCool);
+console.log('The type of total pets: ', typeof totalPets);
+const unknown = null;
+console.log('the value of unknown is: ', unknown);
+console.log('the type of unknown is: ', typeof unknown);
+let never;
+console.log('the value of never is: ', never);
+console.log('the type of never is: ', typeof never);
