@@ -9,14 +9,13 @@ var orderHistory = [{
   Manufacturer: 'Nintendo Inc',
   'ORDER#': '113-2882177-2648248',
   TOTAL: '$44.53',
-  Placed: 'July 3, 2020',
   Delivered: 'July 5, 2020'
 },
 {
   'Order#2': 'July 7, 2020',
-  isbn: '979-2314534534',
-  title: 'GameCube Controller - Super Smash Bros. Edition(Nintendo Switch)',
-  Manufacturer: 'Nintendo Inc',
+  isbn: '979-2345635426',
+  manufacturer: 'Gamecube Controller Adapter. Super Smash Bros Switch Gamecube Adapter',
+  author: 'Nintendo Inc',
   'ORDER#': '114-2875557-9059409',
   TOTAL: '$17.22',
   Delivered: 'July 7, 2020'
