@@ -8,7 +8,7 @@ var orderHistory = [{
   item: 'GameCube Controller - Super Smash Bros. Edition(Nintendo Switch)',
   Manufacturer: 'Nintendo Inc',
   'ORDER#': '113-2882177-2648248',
-  TOTAL: '$44.53',
+  TOTAL: '$138.93',
   Delivered: 'July 5, 2020'
 },
 {

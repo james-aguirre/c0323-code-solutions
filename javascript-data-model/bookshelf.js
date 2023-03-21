@@ -22,7 +22,7 @@ var bookshelf = [
   {
     isbn: '979-2314534534',
     title: 'GameCube Controller - Super Smash Bros. Edition(Nintendo Switch)',
-    author: 'Nintendo Inc'
+    Manufacturer: 'Nintendo Inc'
   },
   {
     isbn: '979-2345635426',
@@ -40,3 +40,6 @@ var bookshelf = [
     author: 'Rauschmayer, Dr. Axel'
   }
 ];
+console.log(bookshelf[2].author);
+console.log(bookshelf[0].isbn);
+console.log(bookshelf[3].title);
