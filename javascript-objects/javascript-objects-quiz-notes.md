@@ -5,9 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are objects used for?
-To store lists of values with a key
+To store lists of data
 - What are object properties?
-the value assigned to the key
+the value assigned to the key, object properties are similar to variables being stored within an object
 - Describe object literal notation.
 Each property inside an object is stored with a corresponding key and value with each property seperated by a comma
 - How do you remove a property from an object?

@@ -27,3 +27,4 @@ const pet = {
 delete pet.name;
 delete pet.type;
 console.log('value of pet object: ', pet);
+window.alert('Hello World!');
