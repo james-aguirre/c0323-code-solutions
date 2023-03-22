@@ -1,5 +1,5 @@
 /* exported getAreaOfCircle */
 function getAreaOfCircle(radius) {
-  return (radius * radius) * 3.14159265359
-  ;
+  return (radius * radius) * 3.141592653589793;
+
 }
