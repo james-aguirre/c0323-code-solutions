@@ -7,7 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - Why do we log things to the console?
 To test if code is working properly
 - What is a method?
-A built in function
+ A method is a function which is a property of an object
 - How is a method different from any other function?
 you don't have to define the function
 - How do you remove the last element from an array?
@@ -17,7 +17,7 @@ Math.floor() method
 - How do you generate a random number?
 Math.random()
 - How do you delete an element from an array?
-array.splice
+array.splice()
 - How do you append an element to an array?
 array.push to the end of an array, array.unshift to add to the beggining of an array
 - How do you break a string up into an array?
@@ -31,7 +31,7 @@ Yes
 - Roughly how many array methods are there according to the MDN Web docs?
 40
 - What three-letter acronym should you always include in your Google search about a JavaScript method or CSS property?
-JSS
+mdn
 ## Notes
 
 All student notes should be written here.
