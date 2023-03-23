@@ -5,9 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the purpose of a loop?
-To iterate a certain number of times
+To iterate over multiple items to run blocks of code
 - What is the purpose of a **condition** expression in a loop?
-To set a condition for the loop to execute or not
+To set a condition for the loop to run until a condition is met
 - What does "iteration" mean in the context of loops?
 Each cycle of the loops definitive code block
 - _When_ does the **condition** expression of a `while` loop get evaluated?
@@ -28,7 +28,10 @@ Using a for in loop
 ## Notes
 
 All student notes should be written here.
-
+For loops for objecs and arrays
+while loop for unsure how long to run for
+for in loop to loop through objects
+"debugger;" to check each step in console sources tab
 
 How to write `Code Examples` in markdown
 
