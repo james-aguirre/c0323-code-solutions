@@ -1,10 +1,8 @@
 /* exported getIndexes */
 function getIndexes(array) {
   const indexes = [];
-  let i = 1;
-  for (i in array) {
+  for (let i = 0; i < array.length; i++) {
     indexes.push(i);
-    indexes[i] = i * 1;
   }
   return indexes;
 }
