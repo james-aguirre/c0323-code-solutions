@@ -30,7 +30,7 @@ console.log('getEvenNumbersToTwenty():', getEvenNumbersToTwenty());
 function repeatWord(word, times) {
   let count = 1;
   let repeated = '';
-  while (count < times) {
+  while (count <= times) {
     repeated += word;
     count++;
   }
@@ -55,8 +55,7 @@ console.log('doubleAll[6, 20, 50]:', doubleAll([6, 20, 50]));
 
 function getKeys(object) {
   const keys = [];
-  let key = 1;
-  for (key in object) {
+  for (const key in object) {
     keys.push(key);
   } return keys;
 }
@@ -68,8 +67,7 @@ console.log('keys in getkeys:', getKeys({
 
 function getValues(object) {
   const values = [];
-  let key = 2;
-  for (key in object) {
+  for (const key in object) {
     values.push(object[key]);
   } return values;
 }
