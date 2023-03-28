@@ -7,9 +7,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the purpose of an HTML `form` element?
 To receive data from the user
 - Give five examples of form control elements.
-button, checkbox, radio, submit,  textarea
+button, checkbox, radio, submit,  textarea, input, 'fieldset
 - Give three examples of `type` attribute values for HTML `<input>` elements.
-label, select, button
+label, select, button, radio, checkbox, file
 - Is an HTML `<input>` element a block element or an inline element?
 It's an inline-block
 ## Notes
