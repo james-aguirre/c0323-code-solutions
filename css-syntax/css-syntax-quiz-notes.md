@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the names of the individual pieces of a CSS rule?
-declaration, property, and value
+selector, declaration, property, and value
 - In CSS, how do you select elements by their `class` attribute?
 with dot notation
 - In CSS, how do you select elements by their tag name?
