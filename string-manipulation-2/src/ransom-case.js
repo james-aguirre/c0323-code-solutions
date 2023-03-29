@@ -1,9 +1,9 @@
 /* exported ransomCase */
-// function ransomCase(string) {
-//  let results = '';
-//  for (let i = -1; i < string.length; i += 2) {
-//    if (string[i] % 2 === 0) {
-//      results += string.charAt().toLowerCase();
-//    }
-//  } return results;
-//  }
+function ransomCase(string) {
+  const results = string.toLowerCase();
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] % 2 === 0) {
+      results.charAt[i].toUpperCase();
+    }
+  } return results;
+}
