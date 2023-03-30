@@ -24,3 +24,7 @@ div {
   font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
 }
+
+img > .column-one-fourth {
+  max-height: 100px;
+}
