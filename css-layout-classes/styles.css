@@ -9,11 +9,11 @@
 }
 
 .column-one-third {
-  max-width: calc(100% / 3);
+  flex-basis: calc(100% / 3);
 }
 
 .column-one-fourth {
-  max-width: calc(100% / 4);
+  flex-basis: calc(100% / 4);
 }
 
 div {
@@ -21,16 +21,12 @@ div {
   font-size: 1rem;
 }
 
-.column-one-half {
-  max-width: 65%;
-}
-
 .column-third {
-  max-width: 33%;
+  flex-basis: calc(100% / 3);
 }
 
 .column-two-thirds {
-  max-width: 66%;
+  flex-basis: 66%;
 }
 
 img {
