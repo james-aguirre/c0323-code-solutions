@@ -1,15 +1,11 @@
 .container {
-  display: flex;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  flex-direction: column;
-  max-height: 100vh;
 }
 
 .row {
   display: flex;
-  width: calc(109%);
 }
 
 .column-one-third {
@@ -25,6 +21,18 @@ div {
   font-size: 1rem;
 }
 
-img > .column-one-fourth {
-  max-height: 100px;
+.column-one-half {
+  max-width: 65%;
+}
+
+.column-third {
+  max-width: 33%;
+}
+
+.column-two-thirds {
+  max-width: 66%;
+}
+
+img {
+  width: 100%;
 }
