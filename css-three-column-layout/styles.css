@@ -1,0 +1,29 @@
+body {
+  color: white;
+  background-color: lightskyblue;
+  display: flexbox;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+}
+
+div {
+  width: 100%;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column-third {
+  flex-basis: 33%;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
