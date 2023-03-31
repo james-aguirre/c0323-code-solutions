@@ -1,6 +1,11 @@
 .container {
-  display: flex;
-  flex-direction: column;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  line-height: 25px;
 }
 
 .row {
@@ -8,6 +13,11 @@
   flex-direction: row;
 }
 
-.column {
-  flex-basis: 50%;
+.columm-fourth {
+  flex-basis: 25%;
+}
+
+.column-whole {
+  text-align: center;
+  display: block;
 }
