@@ -13,11 +13,23 @@ div {
   flex-direction: row;
 }
 
-.columm-fourth {
-  flex-basis: 25%;
+.columm-half {
+  flex-direction: column;
+  flex-basis: 50%;
+  max-height: 100px;
 }
 
 .column-whole {
   text-align: center;
   display: block;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+img {
+  display: inline-block;
+}
+
+h2 p {
+  display: flex;
 }
