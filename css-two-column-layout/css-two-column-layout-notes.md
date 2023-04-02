@@ -25,3 +25,6 @@ div {
   width:100%
 }
 ```
+CMD + SHIFT + p
+type emmet wrap
+<div>
