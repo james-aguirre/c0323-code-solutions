@@ -10,9 +10,6 @@
 }
 
 a {
-  text-align: end;
-  display: flex;
-  flex-direction: row;
   justify-content: end;
 }
 
@@ -22,10 +19,12 @@ a {
 
 .column-half > img {
   position: relative;
-  right: 400px;
-  max-width: 100%;
+  width: 1200px;
+  right: 120px;
+  flex-basis: 75%;
 }
 
-.column-half {
-  flex-basis: 50%;
+.column-half > h1 p {
+  position: absolute;
+  left: 100px;
 }
