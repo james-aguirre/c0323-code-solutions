@@ -17,14 +17,24 @@ a {
   text-align: center;
 }
 
-.column-half > img {
-  position: relative;
+.column-whole > h1 p {
   width: 1200px;
-  right: 120px;
-  flex-basis: 75%;
+  height: 800px;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
 }
 
-.column-half > h1 p {
-  position: absolute;
-  left: 100px;
+.column-whole > img {
+  height: 500px;
+  width: 1250px;
+  margin-left: 150px;
+}
+
+picture {
+  width: 700px;
+  width: 1250px;
 }
