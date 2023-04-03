@@ -9,13 +9,13 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the purpose of events and event handling?
   To run a specific code under if certain conditions are met
 - Are all possible parameters required to use a JavaScript method or function?
-
+  No
 - What method of element objects lets you set up a function to be called when a specific type of event occurs?
   addEventListener method
 - What is a callback function?
   A function passed into another function as an argument
 - What object is passed into an event listener callback when the event fires?
-
+  A function
 - What is the `event.target`? If you weren't sure, how would you check? Where could you get more information about it?
   MDN, it is an object that can receive events and may have listeners for them typically an element and its children but it can also be a document or window.
 - What is the difference between these two snippets of code?
