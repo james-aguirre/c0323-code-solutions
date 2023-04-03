@@ -16,6 +16,9 @@
   font-size: 3rem;
 
   /* your code here */
+  position: absolute;
+  right: 10px;
+  top: 5px;
 }
 
 .joke {
@@ -28,6 +31,8 @@
   text-transform: uppercase;
 
   /* your code here */
+  position: absolute;
+  bottom: 0;
 }
 
 .overlay {
@@ -37,6 +42,6 @@
   position: absolute;
   top: 10px;
   left: 5px;
-  width: 290px;
+  width: 295px;
   height: 290px;
 }
