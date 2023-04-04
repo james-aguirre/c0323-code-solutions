@@ -1,0 +1,35 @@
+.light-bulb {
+  height: 400px;
+  width: 400px;
+  border-radius: 300px;
+  flex-basis: 20%;
+  border-width: 0;
+}
+
+.light-bulb:hover {
+  cursor: pointer;
+}
+
+.container {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  background-color: rgb(17 17 17);
+}
+
+.lit {
+  background-color: rgb(254 249 241);
+}
+
+.on {
+  background-color: rgb(250 234 132);
+  box-shadow: 2 dimgray;
+}
+
+.off {
+  background-color: rgb(37 37 37);
+}
