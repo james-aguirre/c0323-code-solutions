@@ -3,6 +3,7 @@
   width: 400px;
   border-radius: 300px;
   flex-basis: 20%;
+  border-width: 0;
 }
 
 .light-bulb:hover {
@@ -17,18 +18,18 @@
 }
 
 .dark {
-  background-color: rgb(12 32 32);
+  background-color: rgb(17 17 17);
 }
 
 .lit {
-  background-color: khaki;
+  background-color: rgb(254 249 241);
 }
 
 .on {
-  background-color: yellow;
+  background-color: rgb(250 234 132);
   box-shadow: 2 dimgray;
 }
 
 .off {
-  background-color: slategray;
+  background-color: rgb(37 37 37);
 }
