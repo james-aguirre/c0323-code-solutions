@@ -1,43 +1,45 @@
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .row {
   display: flex;
-  justify-content: center;
 }
 
 a {
-  justify-content: end;
-  padding: 10px;
+  padding: 12px;
+  margin-right: 20px;
+  color: rgb(175 175 175);
 }
 
-.header-two {
-  text-align: center;
+a:link {
+  text-decoration: none;
 }
 
 .picture {
-  width: 100%;
-  height: 400px;
+  width: 95%;
+  height: 500px;
   position: relative;
+  left: 20px;
 }
 
 .text {
   position: absolute;
   color: whitesmoke;
   font-size: 1rem;
-  top: 120px;
-  left: 370px;
+  top: 200px;
+  left: 500px;
 }
 
 .get-started {
   position: absolute;
-  background-color: blue;
+  background-color: rgb(41 68 100);
   color: white;
   padding: 10px 30px;
   top: 280px;
   left: 20px;
+  border-radius: 5px;
 }
 
 .pic-container {
@@ -45,19 +47,77 @@ a {
 }
 
 .header-picture {
-  width: 60%;
-  height: 40px;
+  width: 15%;
+  position: relative;
+  top: 30px;
 }
 
-header {
+.head {
   display: flex;
-  align-items: flex-end;
-  border-style: solid;
-  border-bottom: 10px;
+  justify-content: end;
+  border-width: 3px;
+  border-style: none none groove;
+  padding-bottom: 10px;
 }
 
 .column-half {
   justify-content: center;
-  margin-left: 200px;
   flex-basis: 100%;
+  margin-left: 130px;
+}
+
+.header-two {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: rgb(153 153 153);
+}
+
+.section-two {
+  margin-top: 50px;
+  background-color: rgb(250 250 250);
+  border-width: 1px;
+  color: rgb(153 153 153);
+  padding-bottom: 50px;
+  border-style: groove;
+}
+
+.contact-us {
+  background-color: rgb(41 68 100);
+  color: white;
+  border-radius: 5px;
+}
+
+.column-fourth {
+  display: flex;
+}
+
+.section-three {
+  margin-top: 30px;
+  display: flex;
+  height: 130px;
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-three-text {
+  justify-content: flex-start;
+  margin-left: 65px;
+  color: rgb(153 153 153);
+}
+
+.get-started2 {
+  background-color: rgb(41 68 100);
+  padding: 10px 30px;
+  margin-right: 50px;
+  color: white;
+  border-radius: 5px;
+}
+
+.section-four {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(82 83 81);
+  color: white;
 }
