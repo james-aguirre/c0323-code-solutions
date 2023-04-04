@@ -1,0 +1,61 @@
+.container {
+  width: 1300px;
+  height: 900px;
+}
+
+.open-modal {
+  color: white;
+  background-color: royalblue;
+  font-size: 2rem;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.light {
+  background-color: white;
+}
+
+.dark {
+  background-color: darkgrey;
+}
+
+.no {
+  font-size: 2rem;
+  color: white;
+  background-color: limegreen;
+  padding: 10px 60px;
+}
+
+.modal {
+  display: none;
+  top: 200px;
+  left: 500px;
+  right: 500px;
+  height: 400px;
+  width: 700px;
+  position: absolute;
+}
+
+.modal-click {
+  display: fixed;
+  font-size: 2rem;
+  top: 200px;
+  left: 500px;
+  right: 500px;
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  text-align: center;
+}
+
+.open-modal-dark {
+  color: white;
+  background-color: royalblue;
+  font-size: 2rem;
+  padding: 5px 20px;
+  cursor: pointer;
+  opacity: 0.4;
+}
