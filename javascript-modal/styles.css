@@ -50,3 +50,12 @@
   background-color: white;
   text-align: center;
 }
+
+.open-modal-dark {
+  color: white;
+  background-color: royalblue;
+  font-size: 2rem;
+  padding: 5px 20px;
+  cursor: pointer;
+  opacity: 0.4;
+}

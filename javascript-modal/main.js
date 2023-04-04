@@ -11,6 +11,7 @@ function handleClick(event) {
   if (count > 0) {
     $modal.className = 'modal-click';
     $body.className = 'dark';
+    $modalButton.className = 'open-modal-dark';
   }
 }
 function exitModal(event) {
@@ -18,5 +19,6 @@ function exitModal(event) {
   if (count === 0) {
     $modal.className = 'modal';
     $body.className = 'light';
+    $modalButton.className = 'open-modal';
   }
 }
