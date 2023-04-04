@@ -28,12 +28,12 @@
 
 .modal {
   display: none;
-  top: 200px;
-  left: 500px;
-  right: 500px;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 400px;
   width: 700px;
-  position: absolute;
+  position: fixed;
 }
 
 .modal-click {

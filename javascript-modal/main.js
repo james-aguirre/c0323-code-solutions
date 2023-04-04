@@ -1,4 +1,4 @@
-let count = 0;
+let modalOpen = false;
 const $modalButton = document.querySelector('.open-modal');
 const $modal = document.querySelector('.modal');
 $modalButton.addEventListener('click', handleClick);
@@ -7,16 +7,16 @@ $modalExit.addEventListener('click', exitModal);
 const $body = document.querySelector('.light');
 
 function handleClick(event) {
-  count++;
-  if (count > 0) {
+  modalOpen = true;
+  if (modalOpen) {
     $modal.className = 'modal-click';
     $body.className = 'dark';
     $modalButton.className = 'open-modal-dark';
   }
 }
 function exitModal(event) {
-  count--;
-  if (count === 0) {
+  modalOpen = false;
+  if (modalOpen !== true) {
     $modal.className = 'modal';
     $body.className = 'light';
     $modalButton.className = 'open-modal';
