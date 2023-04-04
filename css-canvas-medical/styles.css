@@ -167,3 +167,7 @@ a:link {
 .head > .contact-us {
   color: white;
 }
+
+.six-columns {
+  width: 100%;
+}
