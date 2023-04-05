@@ -1,12 +1,15 @@
 span {
   font-size: 3.5rem;
   white-space: pre;
-  border-bottom: 0.5rem solid black;
 }
 
 .green {
   color: limegreen;
   border-bottom: none;
+}
+
+.selected {
+  border-bottom: 0.5rem solid black;
 }
 
 .red {
