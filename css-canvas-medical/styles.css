@@ -127,9 +127,9 @@ a:link {
 
 .white-logo {
   position: relative;
-  width: 200px;
-  height: 30px;
-  top: 130px;
+  width: 150px;
+  height: 25px;
+  top: 110px;
   left: 60px;
 }
 
@@ -176,6 +176,7 @@ a:link {
   display: flex;
   justify-content: flex-end;
   flex-basis: 50%;
+  padding-bottom: ;
 }
 
 .half {
