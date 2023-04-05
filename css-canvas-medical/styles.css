@@ -171,3 +171,35 @@ a:link {
 .six-columns {
   width: 100%;
 }
+
+.row-lower {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 50%;
+}
+
+.half {
+  padding: 10px 20px;
+  margin-right: 120px;
+}
+
+.half > a {
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  background: linear-gradient(transparent, rgb(68 65 65 / 75%));
+  height: 500px;
+  left: 253px;
+  width: 950px;
+  bottom: 201px;
+}
+
+.about-us {
+  padding-right: 45px;
+}
+
+.blog {
+  padding-right: 20px;
+}
