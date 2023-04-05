@@ -1,0 +1,25 @@
+span {
+  font-size: 3.5rem;
+  white-space: pre;
+}
+
+.green {
+  color: limegreen;
+  border-bottom: none;
+}
+
+.selected {
+  border-bottom: 0.5rem solid black;
+}
+
+.red {
+  color: red;
+}
+
+.container {
+  width: 1000px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
