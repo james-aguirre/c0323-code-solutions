@@ -15,13 +15,13 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What does the `event.preventDefault()` method do?
   Prevents the browsers default action for whatever it's attached to
 - What does submitting a form without `event.preventDefault()` do?
-  reloads the page
+  reloads the page and puts form data into the URL
 - What property of a form element object contains all of the form's controls.
-  ID
+  elements property
 - What property of a form control object gets and sets its value?
-ID
+  The value property as its a getter/setter property
 - What is one risk of writing a lot of code without checking to see if it works so far?
-Having so much broken code you have to restart
+  Having so much broken code you have to restart
 - What is an advantage of having your console open when writing a JavaScript program?
 You can check new code and see if theres any errors right away
 ## Notes
