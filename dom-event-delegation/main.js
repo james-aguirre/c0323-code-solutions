@@ -1,5 +1,7 @@
 const $taskList = document.querySelector('.task-list');
 $taskList.addEventListener('click', taskListClick);
+const $button = document.querySelector('button');
+console.log('button query ', $button);
 
 function taskListClick(event) {
   console.log('event target:', event.target);
