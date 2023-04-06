@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the `event.target`?
-  The target of the event funcion
+  The target of the event element being selected
 - Why is it possible to listen for events on one element that actually happen its descendent elements?
   Event bubbling and capturing
 - What DOM element property tells you what type of element it is?
