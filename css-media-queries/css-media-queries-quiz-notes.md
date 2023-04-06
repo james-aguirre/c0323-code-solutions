@@ -12,7 +12,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 ## Notes
 
 All student notes should be written here.
-
+!shift 1 enter = html skeleton;
 
 How to write `Code Examples` in markdown
 
