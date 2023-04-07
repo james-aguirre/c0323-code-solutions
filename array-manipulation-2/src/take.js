@@ -2,13 +2,11 @@
 
 function take(array, count) {
   const arr = [];
-  let i = 0;
-  while (i < count) {
-    if (count) {
+  if (array.length > count) {
+    for (let i = 0; i < count; i++) {
       arr.push(array[i]);
-      i++;
-    } else {
-      return;
-    }
-  } return arr;
+    } return arr;
+  } else {
+    return array;
+  }
 }
