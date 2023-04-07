@@ -20,7 +20,7 @@ const jsonExample = JSON.stringify(array);
 console.log('jsonExample: ', jsonExample);
 console.log('typof :', typeof jsonExample);
 
-const jSon = '{"numberId":"32425","name":"James Aguirre"}';
+const jSon = '{"numberId": 32425,"name":"James Aguirre"}';
 console.log('student: ', jSon);
 console.log('typeof: ', typeof jSon);
 const obj = JSON.parse(jSon);
