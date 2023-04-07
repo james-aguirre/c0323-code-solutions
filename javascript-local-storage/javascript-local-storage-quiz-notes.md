@@ -9,9 +9,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you retrieve data from `localStorage`?
   localStorage.getItem(keyName)
 - What data type can `localStorage` save in the browser?
-  JSON objects
+  JSON strings
 - When does the `'beforeunload'` event fire on the `window` object?
-  Triggers its codebloc before the page exits or refreshes
+  Triggers its codeblock before the page exits or refreshes
 ## Notes
 
 All student notes should be written here.
