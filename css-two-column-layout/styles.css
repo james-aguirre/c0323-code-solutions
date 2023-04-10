@@ -1,0 +1,78 @@
+.container {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtyU5rZP.woff2") format("woff2");
+  unicode-range:
+    u+0000-00ff,
+    u+0131,
+    u+0152-0153,
+    u+02bb-02bc,
+    u+02c6,
+    u+02da,
+    u+02dc,
+    u+2000-206f,
+    u+2074,
+    u+20ac,
+    u+2122,
+    u+2191,
+    u+2193,
+    u+2212,
+    u+2215,
+    u+feff,
+    u+fffd;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.columm-half {
+  flex-basis: 25%;
+  display: flex;
+}
+
+.column-whole {
+  text-align: center;
+  display: block;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+button {
+  margin-top: 50px;
+  margin-left: 220px;
+  color: green;
+  background-color: white;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-color: limegreen;
+  border-width: 2px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.text {
+  padding-right: 100px;
+  padding-left: 50px;
+}
+
+p {
+  font-weight: 100;
+}
+
+h6 {
+  font-size: larger;
+}
