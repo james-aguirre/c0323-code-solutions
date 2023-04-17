@@ -12,20 +12,20 @@ _definition_ and a method _call_?
 - Describe method **definition** syntax (structure).
   Function name, parameter and definitive codeblock
 - Describe method **call** syntax (structure).
-  Function name, argument and result
+  Method name, Arguments and Object
 - How is a method different from any other function?
   Its a property of an object
 - What is the **defining characteristic** of
 Object-Oriented Programming?
-  Programming around objects which can hold data and code
+  Programming around objects which can hold data and code, data and functionality
 - What are the four "principles" of Object-Oriented Programming?
-  Abstraction, ecapsulation, inheritance and polymorpism
+  Abstraction, encapsulation, inheritance and polymorpism
 - What is "abstraction"?
   Concept of being able to work with complex systems in simpler ways
 - What does API stand for?
   Application programming interface
 - What is the purpose of an API?
-  To give an simpler way to interact with complex computer programs
+  To give a simpler way to interact with complex computer programs
 
 ## Notes
 
