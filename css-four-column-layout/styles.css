@@ -24,19 +24,17 @@ img {
 
 .column-fourth-two > img {
   width: 20%;
-  padding-left: 8rem;
+  margin-left: 40%;
 }
 
 .column-4 {
-  width: 100%;
-  justify-content: center;
-  padding-left: 7rem;
+  flex-basis: 25%;
+  text-align: center;
 }
 
 .column-4-2 {
   flex-basis: 25%;
-  justify-content: center;
-  padding-left: 4.5rem;
+  text-align: center;
 }
 
 h2 {
