@@ -1,7 +1,7 @@
 function ExampleConstructor() {
 
 }
-console.log('ExampleConstructor.prototype.value : ', ExampleConstructor.prototype.value);
+console.log('ExampleConstructor.prototype : ', ExampleConstructor.prototype);
 console.log('typeof Example.Constructor.prototype: ', typeof ExampleConstructor.prototype);
 
 const newExConstructor = new ExampleConstructor();
