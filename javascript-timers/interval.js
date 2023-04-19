@@ -1,18 +1,15 @@
 const $countDownDisplay = document.querySelector('.countdown-display');
+let count = 4;
+let countdownId = null;
 
-let iD = setInterval(() => {
-  if (iD === 2) {
-    $countDownDisplay.textContent = '3';
-    iD++;
-  } else
-  if (iD === 3) {
-    $countDownDisplay.textContent = '2';
-    iD++;
-  } else
-  if (iD === 4) {
-    $countDownDisplay.textContent = '1';
-    iD++;
+function countDown() {
+  count--;
+  if (count > 0) {
+    $countDownDisplay.textContent = count;
   } else {
     $countDownDisplay.textContent = '~Earth Beeeelow Us~';
+    clearInterval(countdownId);
   }
-}, 1000);
+}
+
+countdownId = setInterval(countDown, 1000);
