@@ -1,8 +1,8 @@
 /* eslint-disable no-undef -- Shape is imported by .html */
 /* exported Square */
-class Square extends Shape {
+class Square extends Shape { // new class Square being defined which extends the class Shape
   constructor(width) {
-    super(30, 20);
+    super(width * width, 4 * width);
     this.width = width;
 
   }
@@ -12,6 +12,6 @@ class Square extends Shape {
   }
 }
 
-const instanceSquare = new Square(50);
+const instanceSquare = new Square(50); // We have a new Square being estanciated;
 console.log('instanceSquare: ', instanceSquare);
 console.log(instanceSquare.describe());
