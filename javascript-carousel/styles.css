@@ -1,0 +1,11 @@
+.container {
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
