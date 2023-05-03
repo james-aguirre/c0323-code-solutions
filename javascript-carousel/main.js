@@ -14,18 +14,18 @@ let countDownId = null;
 // data for entries
 
 $rightButton.addEventListener('click', function (event) {
-  if (count >= $test.length) {
+  if (count >= $test.length - 1) {
     count = 0;
     viewSwap(count);
-  } else { viewSwap(count); }
+  } else { viewSwap(count += 1); }
 });
 
 $leftButton.addEventListener('click', function (event) {
   if (count <= 0) {
-    count = $test.length;
+    count = $test.length - 1;
     viewSwap(count);
   } else {
-    viewSwap(count - 1);
+    viewSwap(count -= 1);
   }
 });
 
@@ -117,8 +117,10 @@ function viewSwap(number) {
       $buttonNodes[i].classList.add('fa-regular');
     }
   }
-  if ($buttonNodes[count + 2] > 6) {
+  if ($buttonNodes[count + 2] > $buttonNodes.length) {
     count = 0;
+    // using count + 2 because the first two nodes on the list are respresenting the left and right arrows; this would
+    // still be dynamic if you were to add another img and corresponding circle button
     $buttonNodes[count + 2].classList.add('fa-solid');
     $buttonNodes[count + 2].classList.remove('fa-regular');
   } else {
@@ -132,19 +134,3 @@ function viewSwap(number) {
 }
 
 countDownId = setInterval(swap, 3000);
-
-// var a = ['fuze', 'learning'];
-// function swap(tuple) {
-//   tuple.unshift(tuple[0]);
-//   tuple.shift();
-//   return tuple;
-// }
-
-// function factorial(integer) {
-//   let result = 1;
-//   for (let i = 2; i <= integer; i++) {
-//     result *= i;
-//   } return result;
-// }
-
-// factorial(5);
