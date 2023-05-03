@@ -14,15 +14,15 @@ let countDownId = null;
 // data for entries
 
 $rightButton.addEventListener('click', function (event) {
-  if (count >= 4) {
+  if (count >= $test.length) {
     count = 0;
     viewSwap(count);
-  }
+  } else { viewSwap(count); }
 });
 
 $leftButton.addEventListener('click', function (event) {
   if (count <= 0) {
-    count = 4;
+    count = $test.length;
     viewSwap(count);
   } else {
     viewSwap(count - 1);
@@ -30,7 +30,8 @@ $leftButton.addEventListener('click', function (event) {
 });
 
 $buttonOne.addEventListener('click', function (event) {
-  viewSwap(0);
+  count = 0;
+  viewSwap(count);
   for (let i = 0; i < $buttonNodes.length; i++) {
     if ($buttonNodes[i].hasAttribute('id')) {
       $buttonNodes[i].classList.remove('fa-solid');
@@ -42,7 +43,8 @@ $buttonOne.addEventListener('click', function (event) {
 });
 
 $buttonTwo.addEventListener('click', function (event) {
-  viewSwap(1);
+  count = 1;
+  viewSwap(count);
   for (let i = 0; i < $buttonNodes.length; i++) {
     if ($buttonNodes[i].hasAttribute('id')) {
       $buttonNodes[i].classList.remove('fa-solid');
@@ -54,7 +56,8 @@ $buttonTwo.addEventListener('click', function (event) {
 });
 
 $buttonThree.addEventListener('click', function (event) {
-  viewSwap(2);
+  count = 2;
+  viewSwap(count);
   for (let i = 0; i < $buttonNodes.length; i++) {
     if ($buttonNodes[i].hasAttribute('id')) {
       $buttonNodes[i].classList.remove('fa-solid');
@@ -66,7 +69,8 @@ $buttonThree.addEventListener('click', function (event) {
 });
 
 $buttonFour.addEventListener('click', function (event) {
-  viewSwap(3);
+  count = 3;
+  viewSwap(count);
   for (let i = 0; i < $buttonNodes.length; i++) {
     if ($buttonNodes[i].hasAttribute('id')) {
       $buttonNodes[i].classList.remove('fa-solid');
@@ -78,7 +82,8 @@ $buttonFour.addEventListener('click', function (event) {
 });
 
 $buttonFive.addEventListener('click', function (event) {
-  viewSwap(4);
+  count = 4;
+  viewSwap(count);
   for (let i = 0; i < $buttonNodes.length; i++) {
     if ($buttonNodes[i].hasAttribute('id')) {
       $buttonNodes[i].classList.remove('fa-solid');
@@ -127,3 +132,19 @@ function viewSwap(number) {
 }
 
 countDownId = setInterval(swap, 3000);
+
+// var a = ['fuze', 'learning'];
+// function swap(tuple) {
+//   tuple.unshift(tuple[0]);
+//   tuple.shift();
+//   return tuple;
+// }
+
+// function factorial(integer) {
+//   let result = 1;
+//   for (let i = 2; i <= integer; i++) {
+//     result *= i;
+//   } return result;
+// }
+
+// factorial(5);
