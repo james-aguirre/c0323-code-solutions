@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column-third">
+        <i class="fas fa-chevron-left fa-4x" id="fa-left"></i>
+      </div>
+      <div class="column-third image">
+        <img src="images/001.png" class="img one" id="image-1">
+        <img src="images/004.png" class="img two hide">
+        <img src="images/007.png" class="img three hide">
+        <img src="images/025.png" class="img four hide">
+        <img src="images/039.png" class="img five hide">
+      </div>
+      <div class="column-third">
+        <i class="fas fa-chevron-right fa-4x" id="fa-right"></i>
+      </div>
+    </div>
+
+    <div class="carousel-progress">
+      <i class="fa-solid fa-circle fa-2x" id="one"></i>
+      <i class="fa-regular fa-circle fa-2x" id="two"></i>
+      <i class="fa-regular fa-circle fa-2x" id="three"></i>
+      <i class="fa-regular fa-circle fa-2x" id="four"></i>
+      <i class="fa-regular fa-circle fa-2x" id="five"></i>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
