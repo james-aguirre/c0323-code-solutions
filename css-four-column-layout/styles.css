@@ -1,0 +1,42 @@
+.container {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Changa One", cursive;
+  font-family: "Delicious Handrawn", cursive;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.column-fourth-two > img {
+  width: 20%;
+  margin-left: 40%;
+}
+
+.column-4 {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.column-4-2 {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
