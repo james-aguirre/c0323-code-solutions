@@ -15,8 +15,10 @@ const book2 = {
   libraryID: 2345,
 };
 
+const { title: title2, author: author2, libraryID: libID2 } = book2;
+
 console.log(
-  `The title of the book is ${book2.title}, the author is ${book2.author}, and the library id is ${book2.libraryID}.`
+  `The title of the book is ${title2}, the author is ${author2}, and the library id is ${libID2}.`
 );
 
 const library = [
@@ -48,5 +50,5 @@ console.log('book3: ', book3);
 console.log('book4: ', book4);
 console.log('book5: ', book5);
 
-const book6 = library[3];
+const [, , , book6] = library;
 console.log('book6: ', book6);
