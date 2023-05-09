@@ -3,9 +3,7 @@ const prices = [42.42, 10, 28.2234, 3.2, 5, 12];
 console.log('Price objects');
 console.log(
   prices.map((element) => {
-    const newArr = [];
-    newArr.push({ price: element, salePrice: element / 2 });
-    return newArr;
+    return { price: element, salePrice: element / 2 };
   })
 );
 
