@@ -1,0 +1,500 @@
+  118  git commit -m 'took value property off ex constructor.prototype'
+  119  git push origin javascript-constructors
+  120   git status
+  121  git switch main
+  122  git pull origin
+  123  git switch array-manipulation-2
+  124  git status
+  125  git add array-manipulation-2
+  126  git commit -m 'array manipulation-2'
+  127  git push origin array-manipulation-2
+  128  git status
+  129  git switch main
+  130  git switch object-manipulation-2
+  131  git switch main
+  132  git add object-manipulation-2
+  133  git commit -m '.'
+  134  git switch main
+  135  git branch javascript-bank
+  136  git switch javascript-bank
+  137  git status
+  138  git add javascript-bank
+  139  git commit -m 'in progress'
+  140  git switch main
+  141  git branch es6-classes
+  142  git switch es6-classes
+  143  git status
+  144  git add es6-classes
+  145  git commit -m 'es6 classes'
+  146  git push origin es6-classes
+  147  git status
+  148  git switch main
+  149  git switch javascript-bank
+  150  git status
+  151  git add javascript-bank
+  152  git commit -m '.'
+  153  git switch main
+  154  git add javascript-bank
+  155  git commit -m '.'
+  156  git switch main
+  157  git switch es6-classes
+  158  git status
+  159  git add es6-classes
+  160  git status
+  161  git add es6-classes
+  162  git commit -m 'switched class constructors to re use properties of parent constructor'
+  163  git push origin es6-classes
+  164  git switch main
+  165  git status
+  166  git branch javascript-timers
+  167  git switch javascript-timers
+  168  git status
+  169  git add JSTIMERS FINISHED
+  170  git add JSTIMERS FINISHED/
+  171  git add JSTIMERSFINISHED/
+  172  git status
+  173  git add javascript-timers
+  174  git commit -m 'js timers'
+  175  git push origin javascript-timers
+  176  git status
+  177  git status
+  178  git switch main
+  179  git status
+  180  git pull origin
+  181  git switch javascript-bank
+  182  git status
+  183  git switch javascript-timers
+  184  git status
+  185  git add javascript-timers
+  186  git status
+  187  git commit -m 'fixed function to use count seperate from variable function, switched innerhtml to textcontent'
+  188  git push origin javascript-timers
+  189  git status
+  190  git switch main
+  191  git branch javascript-carousel
+  192  git switch javascript-carousel
+  193  git status
+  194  git add javascript-carousels
+  195  git add javascript-carousel
+  196  git commit -m 'carousel functionality'
+  197  git add javascript-carousel
+  198  git commit -m 'carousel functionality'
+  199  git add javascript-carousel
+  200  git commit -m 'carousel functionality'
+  201  git switch main
+  202  git branch es6-template-literals
+  203  git switch es6-template-literals
+  204  git status
+  205  git add es6-template-literals
+  206  git commit -m 'es6-template-literals'
+  207  git push origin es6-template-literals
+  208  git status
+  209  git status
+  210  git status
+  211  git switch main
+  212  git status
+  213  switch javascript-bank
+  214  git switch javascript-bank
+  215  git status 
+  216  git add javascript-bank
+  217  git commit -m 'js bank'
+  218  git push origin javascript-bank
+  219  git switch main
+  220  git switch javascript-carousel
+  221  git status
+  222  git add index.html
+  223  git add javascript-carousel
+  224  git status
+  225  git commit -m 'js carousel'
+  226  git push origin javascript-carousel
+  227  git switch main
+  228  git switch es6-template-literals
+  229  git switch main
+  230  git status
+  231  git git branch http-messages
+  232  git branch http-messages
+  233  git switch http-messages
+  234  http http://example.com
+  235  http --verbose http://example.com
+  236  http --body GET https://jsonplaceholder.typicode/users > http-messages/users.json
+  237  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+  238  git status
+  239  git add http-messages
+  240  git commit -m 'http-messagees'
+  241  git push origin http-messages
+  242  http --body GET hhtps://example.com > http-messages/index.html
+  243  http --body GET https://example.com > http-messages/index.html
+  244  git status
+  245  git add http-messages
+  246  git commit -m 'added index file to folder'
+  247  git push origin http-messages
+  248  git switch main
+  249  git pull origin
+  250  git branch javascript-ajax
+  251  git switch javascript-ajax
+  252  git status
+  253  git add javascript-ajax
+  254  git status
+  255  git commit -m 'js ajax'
+  256  git push origin javascript-ajax
+  257  git status
+  258  git switch main
+  259  git status
+  260  git add http-messages
+  261  git status
+  262  git status
+  263  git pull origin
+  264  git status
+  265  clear
+  266  http https://api.edamam.com/api/recipes/v2
+  267  https://api.edamam.com/api/recipes/v2 67ee37b7
+  268   http https://api.edamam.com/api/food-database/v2/parser?app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712&nutrition-type=cooking
+  269   git status
+  270   http https://api.edamam.com/api/recipes/v2?type=public&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712
+  271  http curl -X GET --header "Accept: application/json" --header "Accept-Language: en" "https://api.edamam.com/api/recipes/v2?type=public&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712"
+  272  http GET https://api.edamam.com/api/recipes/v2?type=public&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712
+  273  http GET https://api.edamam.com/api/recipes/v2?type=public&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712
+  274  http GET api/recipes/v2
+  275  http GET https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712
+  276  http https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712
+  277  http www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast
+  278   http www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+  279  http endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=mjU7gbZzhGg7eBbk3wopsM8GnpHs4ntHoprJGE3W3amSu5xmDQTONklMT%2BjNmNuUcz7zSwFR1cuFnbJ6xbt1SbwARMUDgpVJtC7kJpGwuKgGMaUmizr3JK2HgNA1V1kzBHMdUA%3D%3D
+  280  http www.themealdb.com/api/json/v1/1/categories.php
+  281  http https://api.edamam.com/api/recipes/v2?type=public&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712&field=ingredients
+  282  http curl -X GET --header "Accept: application/json" --header "Accept-Language: en" "https://api.edamam.com/api/recipes/v2?type=public&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712&field=ingredients"
+  283  http https://api.edamam.com/api/recipes/v2?type=public&app_id=67ee37b7&app_key=e1593af97eca4f4a7fa557b511077712&field=ingredients
+  284  http https://api.edamam.com/api/recipes/v2?type=public&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  285  http https://api.edamam.com/api/recipes/v2?type=public&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  286  http http://www.omdbapi.com/?i=tt3896198&apikey=42d202c0
+  287  http http://www.omdbapi.com/?apikey=[42d202c0]&
+  288  http https://pokeapi.co/api/v2/pokemon/ditto
+  289  http www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+  290   http www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+  291  http https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+  292  http https://api.edamam.com/api/recipes/v2?type=public&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5&mealType=Breakfast
+  293  http GET https://api.jikan.moe/v4/anime/{id}/recommendations
+  294  http GET https://api.jikan.moe/v4/top/anime
+  295  http curl -X GET --header "Accept: application/json" --header "Accept-Language: en" "https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5"
+  296  http https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  297  http GET https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  298  http GET https://api.jikan.moe/v4/top/anime
+  299  http GET https://www.api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  300  http curl -X GET --header "Accept: application/json" --header "Accept-Language: en" "https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5"
+  301  http GET https://api.jikan.moe/v4/recommendations/anime
+  302  http https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  303  http https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  304  http https://api.edamam.com/api/recipes/v2?type=public&q=chicken%20soup&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5
+  305  http https://api.edamam.com/api/recipes/v2?type=public&q=chicken&app_id=a4323037&app_key=efb289a3f4aef581c39687e0b6f773e5	
+  306  git switch javascript-carousel
+  307  git status
+  308  git stash
+  309  git switch javascript-carousel
+  310  git add javascript-carousel
+  311  git stash
+  312  git status
+  313  git add javascript-carousel
+  314  git commit -m 'dynamic button functionality'
+  315  git status
+  316  git add javascript-carousel
+  317  git commit -m 'made code dynamic if i were to add any new images/buttons'
+  318  git push origin javascript-carousel
+  319  git status
+  320  git switch main
+  321  git switch css-media-queries
+  322  git status
+  323  git push origin css-media-queries
+  324  git status
+  325  git switch main
+  326  git exit
+  327  git switch object-manipulation-2
+  328  git status
+  329  git status
+  330  git add object-manipulation-2
+  331  git commit -m 'pick function completed'
+  332  git status
+  333  git add object-manipulation-2
+  334  git commit -m 'omit function complete'
+  335  git status
+  336  git add object-manipulation-2
+  337  git commit -m 'finished defaults function'
+  338  git push origin object-manipulation-2
+  339  git switch main
+  340  git switch string-manipulation-2
+  341  git status
+  342  git add string-manipulation-2
+  343  git commit -m 'str manipulation-2 complete'
+  344  git status
+  345  git push origin string-manipulation-2
+  346  git status
+  347  git switch main
+  348  git pull origin
+  349  git branch array-manipulation-3
+  350  git branch string-manipulation-3
+  351  git switch string-manipulation-3
+  352  git status
+  353  git add string-manipulation-3
+  354  git commit -m 'function isPalindromic completed'
+  355  git status
+  356  git add string-manipulation-3
+  357  git commit -m 'isAnagram function complete'
+  358  git add string-manipulation-3
+  359  git commit -m 'isAnagram function complete'
+  360  git add string-manipulation-3
+  361  git commit -m 'isAnagram function complete'
+  362  git add string-manipulation-3
+  363  git commit -m 'isAnagram function complete'
+  364  git status
+  365  git add string-manipulation-3
+  366  git add string-manipulation-3
+  367  git commit -m 'first three algos complete'
+  368  git status
+  369  git add string-manipulation-3
+  370  git commit -m 'first three algos complete'
+  371  git switch main
+  372  git status
+  373  git status
+  374  git pull origin
+  375  npm install --save-dev prettier eslint-config-prettier
+  376  npm install --save-dev stylelint@latest
+  377  npm install --save-dev stylelint@latest --legacy-peer-deps
+  378  npm install --save-dev prettier eslint-config-prettier
+  379  npm install --save-dev prettier eslint-config-prettier
+  380  rm -rf node_modules/
+  381  npm install --save-dev prettier eslint-config-prettier
+  382  npm i
+  383  git status
+  384  git add
+  385  git status
+  386  git status
+  387  git add .devcontainer
+  388  git add .eslintrc
+  389  git add lintstagedrc
+  390  git add .lintstagedrc
+  391  git add .markuplintrc
+  392  git add .prettierrc
+  393  git add .stylelintrc
+  394  git add package-lock.json
+  395  git add package.json
+  396  git status
+  397  git commit -m 'changes to lintr to not give formatting errors'
+  398  git push origin main
+  399  git status
+  400  git push origin main
+  401  git status
+  402  git push origin 
+  403  git push origin main 
+  404  git pull origin main
+  405  git push origin main
+  406  git push origin main 
+  407  git pull origin main
+  408  git status
+  409  git pull origin
+  410  git status
+  411  git status
+  412  git branch es6-destructuring
+  413  git switch es6-destructuring
+  414  git status
+  415  git status
+  416  git add es6-destructuring
+  417  git status
+  418  git commit -m 'base files'
+  419  git add es6-destructuring
+  420  git commit -m 'person obj'
+  421  git status
+  422  git add es6-destructuring
+  423  git status
+  424  git commit -m 'es6 destructuring'
+  425  git push origin es6-destructuring
+  426  git status
+  427  git add es6-destructuring
+  428  git commit -m 'deleted extra script tag in index.html'
+  429  git push origin es6-destructuring
+  430  git add es6-destructuring
+  431  git commit -m ''
+  432  git add es6-destructuring
+  433  git commit -m ''
+  434  git push origin es6-destructuring
+  435  git add es6-destructuring
+  436  git commit -m ''
+  437  git push origin es6-destructuring
+  438  git switch main
+  439  git branch es6-arrow-functions
+  440  git status
+  441  git commit -m '.'
+  442  git push origin es6-destructuring
+  443  git switch main
+  444  git switch es6-arrow-functions
+  445  git switch main
+  446  git branch es6-arrow-functions
+  447  git switch es6-arrow-functions
+  448  git status
+  449  git add es6-destructuring
+  450  git status
+  451  git add es6-arrow-functions
+  452  git status
+  453  git commit -m 'es6-arrow-functions'
+  454  git push origin es6-arrow-functions
+  455  git status
+  456  git switch es6-destructuring
+  457  git switch main
+  458  git pull origin
+  459  git status
+  460  git pull origin main
+  461  git checkout es6-arrow-functions
+  462  git merge main
+  463  git status
+  464  git commit -m '.'
+  465  git status
+  466  git add es6-destructuring
+  467  git status
+  468  git commit -m '.'
+  469  git status
+  470  git switch main
+  471  git pull origin
+  472  git switch es6-arrow-functions
+  473  git status
+  474  git merge main
+  475  git push -u origin es6-arrow-functions
+  476  git status
+  477  git switch main
+  478  git pull origin main
+  479  git status
+  480  git status
+  481  git add es6-arrow-functions
+  482  git commit -m 'quiz answers for es6 arrow functions'
+  483  git branch es6-operators
+  484  git status
+  485  git switch es6-operators
+  486  git add es6-operators
+  487  git commit .
+  488  git status
+  489  git add es6-operators
+  490  git status
+  491  git commit -m 'es6 operators'
+  492  git status
+  493  git status
+  494  git add css-operators
+  495  git add es6-operators
+  496  git add es6-operators
+  497  git commit -m 'quiz answers'
+  498  git status
+  499  git push origin es6-operators
+  500  git status
+  501  git status
+  502  git switch mai
+  503  git switch main
+  504  git pull origin main
+  505  git status
+  506  git add es6-operators
+  507  git status
+  508  git add object-manipulation-2
+  509  git staus
+  510  git commit -m 'updated notes es6-operators'
+  511  git branch array-methods
+  512  git status
+  513  git switch array-methods
+  514  git status
+  515  git status
+  516  git add array-methods
+  517  git status
+  518  git commit -m 'array-methods'
+  519  git push origin array-methods
+  520  git status
+  521  git add array-methods
+  522  git commit -m 'switched map price function to return original array instead of putting in new array'
+  523  git status
+  524  git add array methods
+  525  git add array-methods
+  526  git commit -m 'switched formatted prices to use Number to fixed method'
+  527  git push origin array-methods
+  528  git status
+  529  git add array-methods
+  530  git add es6-destructuring
+  531  git status
+  532  git add array-methods 
+  533  git status
+  534  git status
+  535  git add array-methods
+  536  git commit -m 'changed to not include names with d'
+  537  git push origin array-methods
+  538  git switch main
+  539  git status
+  540  git branch command-line-basics
+  541  git switch command-line-basics
+  542  cd command-line-basics
+  543  man man
+  544  man cat
+  545  cat cat
+  546  man cat
+  547  cat laziness.txt
+  548  cat impatience.txt
+  549  cat hubris.txt
+  550  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  551  cat three-virtues.txt
+  552  man ls
+  553  ls -aF lfz-staff > lfz-staff/contents.txt
+  554  man ls
+  555  man ls
+  556  cat lfz-staff/content.txt
+  557  ls-staff/
+  558  ls lfz-staff
+  559  ls -aF lfz-staff > lfz-staff/contents.txt
+  560  ls -aF lfz-staff > lfz-staff/contents.txt
+  561   ls -aF lfz-staff > lfz-staff/contents.txt
+  562  cat lfz-staff/contents.txt
+  563  man pwd
+  564  pwd > i-was-here.txt
+  565  ls
+  566  cat i-was-here.txt
+  567  pwd
+  568  man pwd
+  569  catn-i-was-here.txt
+  570  cat i-was-here.txt
+  571  ls
+  572  man echo
+  573  touch > tag-youre-it.txt
+  574  touch tag-youre-it.txt
+  575  ls
+  576  touch snoot/boop.txt
+  577  ls snoot/
+  578  man mkdir
+  579  mkdir parent
+  580  ls parent/
+  581  ls
+  582  ls parent
+  583  ls parent
+  584  ls lll
+  585  mkdir -p parent/child/grandchild
+  586  touch .gitkeep
+  587  ls -a
+  588  ls -a parent
+  589  ls -a parent/child
+  590  ls -a parent/child/grandchild
+  591  ls -a parent/child/grandchild/
+  592  ls -a parent/child/grandchild/...
+  593  parent -a
+  594  ls -a parent
+  595  man echo
+  596  echo 'Hello World!'
+  597  echo 'Hello, World!' > hello.txt
+  598  ls
+  599  cat hello.txt
+  600  man mv
+  601  mv pokiemans pokemon
+  602  ls
+  603  man rm
+  604  rm lol.txt
+  605  ls
+  606  man rm
+  607  rm -r kill-me/
+  608  ls
+  609  man cp
+  610  cp and-then.txt no-and-then.txt
+  611  ls
+  612  cat and.then.txt
+  613  cat and-then.txt
+  614  cat no-and-then.txt
+  615  man history
+  616  history
+  617  history > command-history.txt
