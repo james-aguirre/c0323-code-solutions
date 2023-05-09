@@ -11,11 +11,7 @@ console.log('Formatted Prices ');
 console.log(
   prices.map((a) => {
     let formatted = '';
-    formatted += new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'USD',
-      maximumSignificantDigits: 4,
-    }).format(a);
+    formatted += `$${Number.parseFloat(a).toFixed(2)}`;
     return formatted;
   })
 );
