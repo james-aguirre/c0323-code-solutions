@@ -15,5 +15,5 @@ const names = [
 const evens = numbers.filter((a) => a % 2 === 0);
 console.log('evens', evens);
 
-const noD = names.filter((a) => a.includes('d', 'D'));
-console.log('d names', noD);
+const noD = names.filter((a) => !a.includes('d') && !a.includes('D'));
+console.log('no d names: ', noD);

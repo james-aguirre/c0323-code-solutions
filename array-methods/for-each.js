@@ -5,3 +5,5 @@ values.forEach((element) => console.log(element));
 
 console.log('Reverse: ');
 values.reverse().forEach((element) => console.log(element));
+
+values.forEach((n, index) => console.log(values[values.length - 1 - index]));
