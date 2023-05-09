@@ -5,8 +5,8 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the `&&` (logical AND) and `||` (logical OR) operators and how can they be used outside of `if` statements?
-  The && will execute code on the right side of operand if the left side value is null or undefined, while the || operator will execute if the
-  left side operand is any falsey value
+  The && will execute code on the right side of operand if the left side value is falsey, while the || operator will execute if the
+  left side operand is defined
 - What is "short-circuit evaluation" and how does it apply to `&&` and `||`?
   It applies by returning a boolean value as soon as it finds a condition evaluated to be true
 - What is the `??` (nullish coalescing) operator and how does it differ from `||`?
@@ -19,8 +19,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is `...` (spread) syntax? How do you use it with arrays and objects?
   The spread operator functions by copying an entire object or an array into a new object
 - What data types can be spread into an array? Into an object?
-  All 8 data types
+  All data types
 - How does spread syntax differ from rest syntax?
+  The spread syntax creats a new array & rest adds values to an existing array
 
 ## Notes
 
