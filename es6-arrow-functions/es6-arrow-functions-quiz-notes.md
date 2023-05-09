@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the syntax for defining an arrow function?
-  The function name or function keyword unless creating an anonymous function followed by paranthesis/parameters if any followed by => followed by the function codeblock
+  The function name keyword unless creating an anonymous function followed by paranthesis/parameters if any followed by => followed by the function codeblock
 - When an arrow function's body is not surrounded in curly braces (_concise body syntax_), what changes in its functionality?
   You don't need to call the return keyword
 - When using _concise body syntax_, how do you return an object literal?
@@ -21,7 +21,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   - What value does it return?
     42
   - How many arguments are passed to the function `foo`?
-    1
+    1, the arrow function
   - What type of argument is passed to the function `foo`?
     a variable
 - In the expression
@@ -35,7 +35,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   - How many arguments does the arrow function take?
     1
   - What value does it return?
-    It returns a string logging the value of the argument \* 4
+    It returns undefined because there's no return statement
   - How many arguments are passed to the function `bar`?
     1
   - What type of argument is passed to the function `bar`?
@@ -44,6 +44,8 @@ After completing this exercise, you should be able to discuss or answer the foll
     When its called with an argument
 - How does the value of `this` differ between standard functions and arrow functions?
   In standard functions the value of this is derived from the calling object, in arrow functions this refers to the window object
+  - for standard functions this is resolved based on the calling object.
+  - for arrow functions, `this` is resolved by its lexical scope
 
 ## Notes
 
