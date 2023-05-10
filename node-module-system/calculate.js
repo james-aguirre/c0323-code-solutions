@@ -34,3 +34,13 @@ if (process.argv[3] === 'plus') {
 // }
 
 // }
+
+// function calculate(arg1, operator, arg2) {
+//   switch(operator) {
+//     case 'plus': return add(arg1, arg2);
+//   }
+// }
+
+// const arg1 = Number(process.argv[2]);
+// const operator = process.argv[3];
+// const arg2 = Number(process.argv[4]);
