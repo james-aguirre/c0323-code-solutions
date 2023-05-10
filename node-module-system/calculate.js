@@ -12,3 +12,25 @@ if (process.argv[3] === 'plus') {
 } else if (process.argv[3] === 'times') {
   multiply(process.argv[2], process.argv[4]);
 }
+
+// if (process.arg)
+// function calculate() {
+//   console.log('Result:', calc(process.argv[3]) )
+// }
+
+// const obj = {
+//   plus: add(),
+//   minus: subtract(),
+//   over: divide(),
+//   times: multiply()
+// }
+
+// if (argv[3] )
+// function calc(argv) {
+// for (const key in obj) {
+//   if (argv[3] === key) {
+//     return obj[key]
+//   }
+// }
+
+// }
