@@ -5,11 +5,11 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is a computer process?
-  A specific task the computer is running
+  A specific task the computer is running // instance of a computer program being executed
 - Roughly how many computer processes are running on your host operating system (Task Manager or Activity Monitor)?
   A lot(50+)
 - Why should a full stack Web developer know that computer processes exist?
-  Because to developing a full stack applicatio requires lots of components such as clients servers and databases
+  Because developing a full stack application requires using lots of components such as clients servers and databases
 
 ## Notes
 
