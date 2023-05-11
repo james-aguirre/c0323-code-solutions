@@ -7,7 +7,7 @@ function randomNum(max) {
 }
 async function random() {
   try {
-    const promise = await writeFile('random.txt', `${randomNum(5)}\n`);
+    const promise = await writeFile('random.txt', `${randomNum(5)}`);
     return promise;
   } catch (err) {
     console.error(err.message);
