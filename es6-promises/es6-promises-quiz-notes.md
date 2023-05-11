@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you handle the fulfillment of a Promise?
   with the resolve keyword
 - How do you handle the rejection of a Promise?
-  reject keyword or promise.catch
+  reject keyword or promise.catch .finally executes after the first 2
 
 ## Notes
 
