@@ -61,5 +61,5 @@ try {
     console.log(`'${process.argv[2]}' is an invalid operation`);
   }
 } catch (error) {
-  throw new Error('Error thrown', error);
+  throw new Error('Error thrown', error.message);
 }
