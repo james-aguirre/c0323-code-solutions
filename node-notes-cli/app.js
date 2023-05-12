@@ -23,26 +23,31 @@ async function create(newNotes) {
   const key = data.nextId;
   data.notes[key] = newNotes;
   data.nextId++;
-  dataToJson();
+  readData();
 }
 
 async function remove(index) {
   if (data.notes[index]) {
     delete data.notes[index];
     dataToJson();
+    // const newObj = JSON.stringify(data, null, 2);
+    // await writeFile('data.json', newObj);
   } else {
-    console.log('Note not found');
+    idNotFound();
   }
 }
 
 async function edit(index) {
-  if (data.notes !== undefined) {
+  if (data.notes[index] !== undefined) {
     const newEdit = process.argv[4];
     data.notes[index] = newEdit;
     dataToJson();
   } else {
-    console.log('Note not found');
+    idNotFound();
   }
+}
+function idNotFound() {
+  throw new Error(`The ID ${process.argv[3]} does not exist`);
 }
 
 if (process.argv[2] === 'read') {
@@ -54,5 +59,5 @@ if (process.argv[2] === 'read') {
 } else if (process.argv[2] === 'edit') {
   edit(process.argv[3]);
 } else {
-  console.log('Invalid command');
+  throw new Error(`'${process.argv[2]}' is an invalid operation`);
 }
