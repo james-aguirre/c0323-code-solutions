@@ -50,14 +50,18 @@ function idNotFound() {
   throw new Error(`The ID ${process.argv[3]} does not exist`);
 }
 
-if (process.argv[2] === 'read') {
-  notes();
-} else if (process.argv[2] === 'create') {
-  create(process.argv[3]);
-} else if (process.argv[2] === 'delete') {
-  remove(process.argv[3]);
-} else if (process.argv[2] === 'edit') {
-  edit(process.argv[3]);
-} else {
-  throw new Error(`'${process.argv[2]}' is an invalid operation`);
+try {
+  if (process.argv[2] === 'read') {
+    notes();
+  } else if (process.argv[2] === 'create') {
+    create(process.argv[3]);
+  } else if (process.argv[2] === 'delete') {
+    remove(process.argv[3]);
+  } else if (process.argv[2] === 'edit') {
+    edit(process.argv[3]);
+  } else {
+    console.log(`'${process.argv[2]}' is an invalid operation`);
+  }
+} catch (error) {
+  throw new Error('Error thrown', error);
 }
