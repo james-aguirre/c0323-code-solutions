@@ -7,14 +7,11 @@ async function parse() {
 }
 const data = await parse();
 async function notes() {
-  console.log(data);
-  // let list;
-  // for (const key in data) {
-  //   if (key === 'notes')
-  //   list = data[key]
-  // }
-  // list.forEach((element) => console.log(element))
+  const list = data.notes;
+  console.log(list);
+  return list;
 }
+// list.forEach((element) => console.log(element))
 
 async function create(newNotes) {
   const key = data.nextId;
@@ -24,12 +21,16 @@ async function create(newNotes) {
   await writeFile('data.json', newObj);
 }
 
-// async function remove(index) {
-//   const data = await parse()
-// }
+async function remove(index) {
+  const list = await notes();
+  console.log(list[index]);
+  delete list[index];
+}
 
 if (process.argv[2] === 'read') {
   notes();
 } else if (process.argv[2] === 'create') {
   create(process.argv[3]);
+} else if (process.argv[2] === 'delete') {
+  remove(process.argv[3]);
 }
