@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is a server?
   A server proviedes a service or information upon receiving requests from a client
 - Which HTTP method does a browser issue to a web server when you visit a URL?
-  a XMLH request
+  a XMLH request/ GET request
 - What is on the first line of an HTTP **request** message?
   An http method that desribes the action to be performed, a request target typically a url and the http version
 - What is on the first line of an HTTP **response** message?
