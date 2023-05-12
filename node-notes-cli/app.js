@@ -10,7 +10,9 @@ const data = await parse();
 
 async function notes() {
   const list = data.notes;
-  console.log(list);
+  for (const [key, value] of Object.entries(list)) {
+    console.log(`${key}: ${value}`);
+  }
 }
 async function create(newNotes) {
   const key = data.nextId;
@@ -29,7 +31,6 @@ async function remove(index) {
 async function edit(index) {
   const newEdit = process.argv[4];
   data.notes[index] = newEdit;
-  console.log(data.notes[index]);
   const newObj = JSON.stringify(data, null, 2);
   await writeFile('data.json', newObj);
 }
