@@ -1,12 +1,11 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
-async function parse() {
+async function readData() {
   const file = await readFile('data.json');
-  const parse = await JSON.parse(file);
-  return parse;
+  return await JSON.parse(file);
 }
 
-const data = await parse();
+const data = await readData();
 
 async function notes() {
   const list = data.notes;
@@ -14,25 +13,38 @@ async function notes() {
     console.log(`${key}: ${value}`);
   }
 }
+
+async function dataToJson() {
+  const newObj = JSON.stringify(data, null, 2);
+  await writeFile('data.json', newObj);
+}
+
 async function create(newNotes) {
   const key = data.nextId;
   data.notes[key] = newNotes;
   data.nextId++;
-  const newObj = JSON.stringify(data, null, 2);
-  await writeFile('data.json', newObj);
+  dataToJson();
 }
 
 async function remove(index) {
-  delete data.notes[index];
-  const newObj = JSON.stringify(data, null, 2);
-  await writeFile('data.json', newObj);
+  if (data.notes[index]) {
+    delete data.notes[index];
+    dataToJson();
+    // const newObj = JSON.stringify(data, null, 2);
+    // await writeFile('data.json', newObj);
+  } else {
+    console.log('Note not found');
+  }
 }
 
 async function edit(index) {
-  const newEdit = process.argv[4];
-  data.notes[index] = newEdit;
-  const newObj = JSON.stringify(data, null, 2);
-  await writeFile('data.json', newObj);
+  if (data.notes !== undefined) {
+    const newEdit = process.argv[4];
+    data.notes[index] = newEdit;
+    dataToJson();
+  } else {
+    console.log('Note not found');
+  }
 }
 
 if (process.argv[2] === 'read') {
@@ -43,4 +55,6 @@ if (process.argv[2] === 'read') {
   remove(process.argv[3]);
 } else if (process.argv[2] === 'edit') {
   edit(process.argv[3]);
+} else {
+  console.log('Invalid command');
 }
