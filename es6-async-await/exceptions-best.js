@@ -10,7 +10,7 @@ async function throwOnce() {
   // purposes. In actual code you will want to log the entire error so that
   // you get the stack trace.
   const msg = await fetch('foo', true);
-  console.log(elapsed(), 'throwOnce:', msg);
+  console.log(msg);
 }
 
 async function throwSeveral() {
