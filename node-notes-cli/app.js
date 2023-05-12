@@ -30,8 +30,6 @@ async function remove(index) {
   if (data.notes[index]) {
     delete data.notes[index];
     dataToJson();
-    // const newObj = JSON.stringify(data, null, 2);
-    // await writeFile('data.json', newObj);
   } else {
     idNotFound();
   }
