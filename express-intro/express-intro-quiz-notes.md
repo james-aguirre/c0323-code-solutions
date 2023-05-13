@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is Express useful for?
-  To provide small, robust tooling for HTTP servers, making it a great solution for single page applications, websites or public APIs
+  To provide small, robust tooling for HTTP servers, making it a great solution for single page applications, websites or public APIs,
 - How does Express fit into a full-stack web application?
   By handling the tasks that node doesn't such as serving files, handling requests and handling HTTP methods
 - How do you add `express` to your package dependencies?
