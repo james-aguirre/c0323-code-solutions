@@ -1,7 +1,7 @@
 import express from 'express';
 const app = express();
 
-const nextId = 1;
+let nextId = 1;
 const grades = {};
 
 app.get('/api/grades', (req, res) => {
@@ -12,14 +12,12 @@ app.get('/api/grades', (req, res) => {
   res.json(arr);
 });
 
-express.json();
-app.use('/api/grades', (req, res) => {
-  req.express.json();
-});
+app.use(express.json());
 
 app.post('/api/grades', (req, res) => {
   grades[nextId] = req.body;
-  res.status(201).send(req.id, req.body);
+  grades[nextId].id = nextId++;
+  res.send(req.body).status(201).end();
 });
 
 app.listen(8080, () => {
