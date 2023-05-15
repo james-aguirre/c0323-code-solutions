@@ -16,7 +16,7 @@ app.get('/api/grades', (req, res) => {
 app.post('/api/grades', (req, res) => {
   grades[nextId] = req.body;
   grades[nextId].id = nextId++;
-  res.send(req.body).status(201).json(grades[nextId]);
+  res.send(req.body).json(grades[nextId]).status(201);
 });
 
 app.listen(8080, () => {
