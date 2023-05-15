@@ -64,6 +64,7 @@ app.delete('/api/notes/:id', async (req, res) => {
     res.status(500).json({ error: 'An unexpected error occured.' });
   } else {
     delete data.notes[note];
+    await writeData(data);
     res.body = null;
     res.status(204).json(res.body);
   }
