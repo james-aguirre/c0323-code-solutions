@@ -8,6 +8,7 @@ async function readData() {
   return await JSON.parse(file);
 }
 
+// added a parameter of data to this function so not to rely on a global variable of data that could be outdated
 async function writeData(data) {
   const newObj = JSON.stringify(data, null, 2);
   await writeFile('data.json', newObj);
@@ -43,13 +44,16 @@ app.post('/api/notes', async (req, res) => {
   // not relevant for this exercise but relevant for future use
   const data = await readData();
   if (req.body === undefined) {
+    // returning errors in json because we are returning an object, which we want to have json encoded
     res.status(400).json({ error: 'content is a required field' });
   } else if (req instanceof Error) {
+    // returning errors in json because we are returning an object, which we want to have json encoded
     res.status(500).json({ error: 'An unexpected error occured.' });
   } else {
     const newNote = data.nextId;
     data.notes[newNote] = req.body;
     data.notes[newNote].id = data.nextId++;
+    // added writeData to every function manipulating notes so the changes save to json file
     await writeData(data);
     res.status(201).json(data.notes[newNote]);
   }
@@ -64,10 +68,12 @@ app.delete('/api/notes/:id', async (req, res) => {
     res.status(400).json({ error: 'id must be a positive integer' });
   } else if (!data.notes[note]) {
     res.status(404).json({ error: 'cannot find note with id ' + note });
+    // returning errors in json because we are returning an object, which we want to have json encoded
   } else if (req instanceof Error) {
     res.status(500).json({ error: 'An unexpected error occured.' });
   } else {
     delete data.notes[note];
+    // added writeData to every function manipulating notes so the changes save to json file
     await writeData(data);
     res.body = null;
     res.status(204).json(res.body);
@@ -90,6 +96,7 @@ app.put('/api/notes/:id', async (req, res, next) => {
   } else {
     data.notes[note] = req.body;
     data.notes[note].id = req.params.id;
+    // added writeData to every function manipulating notes so the changes save to json file
     await writeData(data);
     await res.status(204).json(req.body);
   }
