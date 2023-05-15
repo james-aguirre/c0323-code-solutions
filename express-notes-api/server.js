@@ -39,6 +39,8 @@ app.get('/api/notes/:id', async (req, res) => {
 });
 
 app.post('/api/notes', async (req, res) => {
+  // added await readData to every read function in order to get the most recent data before each request,
+  // not relevant for this exercise but relevant for future use
   const data = await readData();
   if (req.body === undefined) {
     res.status(400).json({ error: 'content is a required field' });
@@ -54,6 +56,8 @@ app.post('/api/notes', async (req, res) => {
 });
 
 app.delete('/api/notes/:id', async (req, res) => {
+  // added await readData to every read function in order to get the most recent data before each request,
+  // not relevant for this exercise but relevant for future use
   const note = req.params.id;
   const data = await readData();
   if (Math.sign(note) !== 1) {
@@ -71,6 +75,8 @@ app.delete('/api/notes/:id', async (req, res) => {
 });
 
 app.put('/api/notes/:id', async (req, res, next) => {
+  // added await readData to every read function in order to get the most recent data before each request,
+  // not relevant for this exercise but relevant for future use
   const data = await readData();
   const note = req.params.id;
   if (Math.sign(note) !== 1) {
