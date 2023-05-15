@@ -29,8 +29,7 @@ app.get('/api/grades', (req, res) => {
   res.json(arr);
 });
 
-// const id = process.argv[3].slice(26)
-app.delete('/api/grades/id', (req, res) => {
+app.delete('/api/grades/:id', (req, res) => {
   delete grades[req.params.id];
   res.sendStatus(204);
 });

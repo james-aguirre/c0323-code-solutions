@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the significance of an HTTP request's method?
-  It specifies what to do for each request
+  It specifies the desired action of what to do for each request
 
 ## Notes
 
