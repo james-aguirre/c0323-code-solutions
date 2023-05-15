@@ -30,21 +30,11 @@ app.get('/api/grades', (req, res) => {
 });
 
 // const id = process.argv[3].slice(26)
-app.delete('/api/grades/12', (req, res) => {
-  delete grades[12];
-  res.sendStatus(204);
-});
-
-app.delete('/api/grades/273', (req, res) => {
-  delete grades[273];
-  res.sendStatus(204);
-});
-
-app.delete('/api/grades/47', (req, res) => {
-  delete grades[47];
+app.delete('/api/grades/id', (req, res) => {
+  delete grades[req.params.id];
   res.sendStatus(204);
 });
 
 app.listen(8080, () => {
-  console.log('Server is active');
+  console.log('Server is active on port 8080');
 });
