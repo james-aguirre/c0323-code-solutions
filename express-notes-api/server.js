@@ -72,7 +72,7 @@ app.put('/api/notes/:id', (req, res) => {
   } else if (req.body.content === undefined) {
     res.status(400).send({ error: 'content field is required' });
   } else {
-    data.notes[note] = req.body;
+    data.notes[note].id = req.params.id;
     dataToJson();
     res.status(204).send(req.body);
   }

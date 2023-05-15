@@ -18,7 +18,8 @@
       "id": 10
     },
     "14": {
-      "content": "foo"
+      "content": "foo",
+      "id": "14"
     }
   }
 }
