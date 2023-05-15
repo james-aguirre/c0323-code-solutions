@@ -4,9 +4,10 @@ const app = express();
 app.use(express.json());
 
 async function readData() {
-  const file = await readFile('data.json');
+  const file = await readFile('data.json', 'utf8');
   return await JSON.parse(file);
 }
+
 const data = await readData();
 async function dataToJson() {
   const newObj = JSON.stringify(data, null, 2);
@@ -21,60 +22,66 @@ app.get('/api/notes', (req, res) => {
   res.status(200).json(arr);
 });
 
-app.get('/api/notes/:id', (req, res) => {
+app.get('/api/notes/:id', async (req, res) => {
+  const data = await readData();
   const note = req.params.id;
   if (Math.sign(note) !== 1) {
-    res.status(400).send({ error: 'id must be a positive integer' });
+    res.status(400).json({ error: 'id must be a positive integer' });
   } else if (!data.notes[note]) {
-    res.status(404).send({ error: 'cannot find note with id ' + note });
+    res.status(404).json({ error: 'cannot find note with id ' + note });
   } else {
-    res.status(200).send(data.notes[note]);
+    res.status(200).json(data.notes[note]);
   }
 });
 
-app.post('/api/notes', (req, res) => {
+app.post('/api/notes', async (req, res) => {
+  // added await readData to every function in order to get the most recent data before each request,
+  // not relevant for this exercise but relevant in
   if (req.body === undefined) {
-    res.status(400).send({ error: 'content is a required field' });
-  } else if (req === Error) {
-    res.status(500).send({ error: 'An unexpected error occured.' });
+    res.status(400).json({ error: 'content is a required field' });
+  } else if (req instanceof Error) {
+    res.status(500).json({ error: 'An unexpected error occured.' });
   } else {
     const newNote = data.nextId;
     data.notes[newNote] = req.body;
     data.notes[newNote].id = data.nextId++;
-    dataToJson();
-    res.send(req.body).json(data.notes[newNote]).status(201);
+    dataToJson(data);
+    res.status(201).json(data.notes[newNote]);
   }
 });
 
-app.delete('/api/notes/:id', (req, res) => {
+app.delete('/api/notes/:id', async (req, res) => {
   const note = req.params.id;
+  const data = await readData();
   if (Math.sign(note) !== 1) {
-    res.status(400).send({ error: 'id must be a positive integer' });
+    res.status(400).json({ error: 'id must be a positive integer' });
   } else if (!data.notes[note]) {
-    res.status(404).send({ error: 'cannot find note with id ' + note });
-  } else if (req.body === Error) {
-    res.status(500).send({ error: 'An unexpected error occured.' });
+    res.status(404).json({ error: 'cannot find note with id ' + note });
+  } else if (req instanceof Error) {
+    res.status(500).json({ error: 'An unexpected error occured.' });
   } else {
     delete data.notes[note];
     dataToJson();
-    res.status(204).send(res.body);
+    res.status(204).json(res.body);
   }
 });
 
-app.put('/api/notes/:id', (req, res) => {
+app.put('/api/notes/:id', async (req, res) => {
+  const data = await readData();
   const note = req.params.id;
   if (Math.sign(note) !== 1) {
-    res.status(400).send({ error: 'id must be a positive integer' });
+    res.status(400).json({ error: 'id must be a positive integer' });
   } else if (!data.notes[note]) {
-    res.status(404).send({ error: 'cannot find note with id ' + note });
-  } else if (req.body === Error) {
-    res.status(500).send({ error: 'An unexpected error occured.' });
+    res.status(404).json({ error: 'cannot find note with id ' + note });
+  } else if (req instanceof Error) {
+    res.status(500).json({ error: 'An unexpected error occured.' });
   } else if (req.body.content === undefined) {
-    res.status(400).send({ error: 'content field is required' });
+    res.status(400).json({ error: 'content field is required' });
   } else {
+    data.notes[note] = req.body;
     data.notes[note].id = req.params.id;
-    dataToJson();
-    res.status(204).send(req.body);
+    dataToJson(data);
+    res.status(204).json(req.body);
   }
 });
 
