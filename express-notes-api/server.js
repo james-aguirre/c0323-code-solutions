@@ -8,13 +8,15 @@ async function readData() {
   return await JSON.parse(file);
 }
 
-const data = await readData();
-async function dataToJson() {
+async function writeData(data) {
   const newObj = JSON.stringify(data, null, 2);
   await writeFile('data.json', newObj);
 }
 
-app.get('/api/notes', (req, res) => {
+app.get('/api/notes', async (req, res) => {
+  // added await readData to every read function in order to get the most recent data before each request,
+  // not relevant for this exercise but relevant in
+  const data = await readData();
   const arr = [];
   for (const key in data.notes) {
     arr.push(data.notes[key]);
@@ -23,6 +25,8 @@ app.get('/api/notes', (req, res) => {
 });
 
 app.get('/api/notes/:id', async (req, res) => {
+  // added await readData to every read function in order to get the most recent data before each request,
+  // not relevant for this exercise but relevant for future use
   const data = await readData();
   const note = req.params.id;
   if (Math.sign(note) !== 1) {
@@ -35,8 +39,7 @@ app.get('/api/notes/:id', async (req, res) => {
 });
 
 app.post('/api/notes', async (req, res) => {
-  // added await readData to every function in order to get the most recent data before each request,
-  // not relevant for this exercise but relevant in
+  const data = await readData();
   if (req.body === undefined) {
     res.status(400).json({ error: 'content is a required field' });
   } else if (req instanceof Error) {
@@ -45,7 +48,7 @@ app.post('/api/notes', async (req, res) => {
     const newNote = data.nextId;
     data.notes[newNote] = req.body;
     data.notes[newNote].id = data.nextId++;
-    dataToJson(data);
+    await writeData(data);
     res.status(201).json(data.notes[newNote]);
   }
 });
@@ -61,12 +64,12 @@ app.delete('/api/notes/:id', async (req, res) => {
     res.status(500).json({ error: 'An unexpected error occured.' });
   } else {
     delete data.notes[note];
-    dataToJson();
+    res.body = null;
     res.status(204).json(res.body);
   }
 });
 
-app.put('/api/notes/:id', async (req, res) => {
+app.put('/api/notes/:id', async (req, res, next) => {
   const data = await readData();
   const note = req.params.id;
   if (Math.sign(note) !== 1) {
@@ -80,8 +83,8 @@ app.put('/api/notes/:id', async (req, res) => {
   } else {
     data.notes[note] = req.body;
     data.notes[note].id = req.params.id;
-    dataToJson(data);
-    res.status(204).json(req.body);
+    await writeData(data);
+    await res.status(204).json(req.body);
   }
 });
 
