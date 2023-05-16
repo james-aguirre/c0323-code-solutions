@@ -1,0 +1,2 @@
+select "genres"
+from "genres"

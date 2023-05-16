@@ -1,0 +1,2 @@
+select "languages"
+from "languages"
