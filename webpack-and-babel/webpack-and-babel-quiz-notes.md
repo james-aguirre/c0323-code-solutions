@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   minifiying the existing code by renaming variables/functions/classes to just a few letters, this bundled code ends up smaller and harder to read if you're not a dev
   who worked on it
 - What is the advantage of using Webpack (or a similar bundler)?
-  It filters your files/code so it's cleaner and more efficient
+  It filters your files/code so it's cleaner(not readability) and more efficient
 - What is Babel?
   Babel is an appilcation that translates newer javascript code into older versions(es5 ...)
 - What is the advantage of using Babel (or a similar transpiler)?
