@@ -13,7 +13,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you mount a React app (root component) to the DOM?
   By putting it inside a function; root.render, inside the index.js is the full code
 - What are some other popular frontend frameworks?
-  Angular, vue.js, Ember.js, jQuery, Svelte, Bootstrap
+  Angular, vue.js, Ember.js, jQuery, Svelte, Bootstrap(**Bootstrap is a CSS utility library, not a frontend framework**)
 
 ## Notes
 
