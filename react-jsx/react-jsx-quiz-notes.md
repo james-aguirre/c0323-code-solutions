@@ -7,6 +7,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is JSX?
   JSX is a syntax extension for javascript that allows you to write HTML-like markup inside of a javascript file
 - How does React use JSX to render components?
+  It using rendering to write onto the screen
 
 ## Notes
 
