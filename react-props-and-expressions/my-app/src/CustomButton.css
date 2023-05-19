@@ -4,15 +4,15 @@ button {
   border-radius: 0.5rem;
 }
 
-.buttonOne {
+.CustomButton-buttonOne {
   background-color: red;
 }
 
-.buttonTwo {
+.CustomButton-buttonTwo {
   background-color: lime;
 }
 
-.buttonThree {
+.CustomButton-buttonThree {
   background-color: blue;
   color: white;
 }

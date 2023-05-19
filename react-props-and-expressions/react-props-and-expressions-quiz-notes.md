@@ -12,7 +12,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you pass props to a component?
   By using them as variables inside of your JSX
 - How do you write JavaScript expressions in JSX?
-  By using if statements or the ternary operator, destructuring
+  By surrounding them in curly braces
 
 ## Notes
 
