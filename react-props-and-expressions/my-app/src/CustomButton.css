@@ -1,0 +1,18 @@
+button {
+  height: 3rem;
+  width: 6rem;
+  border-radius: 0.5rem;
+}
+
+.buttonOne {
+  background-color: red;
+}
+
+.buttonTwo {
+  background-color: lime;
+}
+
+.buttonThree {
+  background-color: blue;
+  color: white;
+}
