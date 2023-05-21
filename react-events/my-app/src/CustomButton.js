@@ -1,11 +1,13 @@
 import './CustomButton.css';
 
-export default function CustomButton({ text, className, message }) {
-  function handleClick() {
-    window.alert(message);
-  }
+export default function CustomButton({
+  text,
+  className,
+  message,
+  onCustomClick,
+}) {
   return (
-    <button onClick={handleClick} className={className}>
+    <button onClick={() => onCustomClick(text)} className={className}>
       {text}
     </button>
   );

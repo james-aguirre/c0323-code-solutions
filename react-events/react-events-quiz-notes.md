@@ -13,13 +13,14 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is the naming convention for event handlers?
   1. having names that start with handle
   2. Then writing the name of the event
+     handle then camelCase
      eg: handleClick()
 - What is an "event handler prop"? Which component declares the prop?
   An event handler prop is a property of a components that handles events, the component that's executing the event handlers is where it's declared
 - What are some custom event handler props a component may wish to define?
-
+  text, click, submit, hover, keydown
 - What is the naming convention for custom event handler props?
-  on followed by a capital letter, eg onSmash = onClick
+  **on** followed by a **capital letter**, eg onSmash = onClick
 
 ## Notes
 
