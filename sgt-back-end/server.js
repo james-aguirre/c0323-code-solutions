@@ -31,12 +31,9 @@ app.post('/api/grades', async (req, res) => {
     const { name, course } = req.body;
     const score = Number(req.body.score);
     if (Math.sign(score) !== 1 || !name || !course) {
-      res
-        .status(400)
-        .send({
-          error:
-            'Invalid input, please supply a valid name, course and integer',
-        });
+      return res.status(400).send({
+        error: 'Invalid input, please supply a valid name, course and integer',
+      });
     }
     const sql = `insert into "grades" ("name", "course", "score")
    values($1, $2, $3)
@@ -57,12 +54,9 @@ app.put('/api/grades/:gradeId', async (req, res) => {
     const { name, course } = req.body;
     const score = Number(req.body.score);
     if (Math.sign(score) !== 1 || !name || !course) {
-      res
-        .status(400)
-        .send({
-          error:
-            'Invalid input, please supply a valid name, course and integer',
-        });
+      return res.status(400).send({
+        error: 'Invalid input, please supply a valid name, course and integer',
+      });
     }
     const sql = `update "grades"
     set "name" = $2,
@@ -72,9 +66,9 @@ app.put('/api/grades/:gradeId', async (req, res) => {
     returning *`;
     const params = [gradeId, name, course, score];
     const result = await db.query(sql, params);
-    const updatedGrade = result.rows;
+    const updatedGrade = result.rows[0];
     if (result.rows.length === 0) {
-      res
+      return res
         .status(404)
         .send({ error: `Grade with gradeId ${gradeId} not found` });
     }
@@ -92,18 +86,16 @@ app.delete('/api/grades/:gradeId', async (req, res) => {
     const sql = `delete from "grades"
   where "gradeId" = $1`;
     if (Math.sign(gradeId) !== 1) {
-      res
-        .status(400)
-        .send({
-          error: 'Invalid input, please supply gradeId as a positive integer',
-        });
+      return res.status(400).send({
+        error: 'Invalid input, please supply gradeId as a positive integer',
+      });
     }
     const result = await db.query(sql, params);
     const deletedGrade = result.rows;
     if (result.rows.length === 1) {
-      res.sendStatus(200, 'Grade successfully deleted');
+      return res.sendStatus(204);
     }
-    res.sendStatus(404, `Grade with gradeId ${deletedGrade} not found`);
+    return res.sendStatus(404, `Grade with gradeId ${deletedGrade} not found`);
   } catch (err) {
     console.log(err);
     res.status(500).json({ error: 'An unexpected error occured.' });
@@ -114,8 +106,9 @@ app.get('/api/grades/:gradeId', async (req, res) => {
   try {
     const gradeId = Number(req.params.gradeId);
     if (Math.sign(gradeId) !== 1) {
-      res.status(400).json({ error: 'gradeId must be a positive integer' });
-      return;
+      return res
+        .status(400)
+        .json({ error: 'gradeId must be a positive integer' });
     }
     const sql = `
      select *
