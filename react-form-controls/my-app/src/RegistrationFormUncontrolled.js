@@ -13,7 +13,7 @@ export default function UncontrolledForm() {
       </label>
       <label for="password">
         Password
-        <input name="password"></input>
+        <input type="password" name="password"></input>
       </label>
       <button>Submit</button>
     </form>

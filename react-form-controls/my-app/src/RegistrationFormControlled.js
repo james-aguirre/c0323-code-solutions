@@ -21,7 +21,7 @@ export default function UncontrolledForm() {
         Password
         <input
           name="password"
-          type="text"
+          type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}></input>
       </label>
