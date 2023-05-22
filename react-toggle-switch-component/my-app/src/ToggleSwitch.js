@@ -12,7 +12,7 @@ export default function ToggleSwitch({ label, className }) {
   }
   return (
     <div className={className}>
-      {label}{' '}
+      {label}
       <div className="toggle-switch">
         <input
           type="checkbox"
@@ -21,7 +21,7 @@ export default function ToggleSwitch({ label, className }) {
           id={label}
           onClick={handleClick}
         />
-        <label className="label" htmlFor={label}>
+        <label className="label">
           <span className="inner" />
           <span className="switch" />
         </label>
