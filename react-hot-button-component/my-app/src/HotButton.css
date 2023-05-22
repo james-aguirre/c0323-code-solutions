@@ -1,0 +1,37 @@
+button {
+  width: 15rem;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 3px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.default {
+  background-color: navy;
+}
+
+.cold {
+  background-color: blue;
+}
+
+.warm {
+  background-color: orange;
+}
+
+.tepid {
+  background-color: yellow;
+}
+
+.hot {
+  background-color: lightskyblue;
+}
+
+.flaming {
+  background-color: lightyellow;
+}
+
+.nuclear {
+  background-color: white;
+}
