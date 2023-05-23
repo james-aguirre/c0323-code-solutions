@@ -7,11 +7,11 @@ export default function UncontrolledForm() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label for="username">
+      <label>
         Username
         <input type="text" name="username"></input>
       </label>
-      <label for="password">
+      <label>
         Password
         <input type="password" name="password"></input>
       </label>

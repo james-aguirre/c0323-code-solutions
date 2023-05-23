@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
-export default function UncontrolledForm() {
+export default function ControlledForm() {
+  // this works by storing the input in the cache with each key input, be sure to always set
+  // useStates value to '' to avoid bugs
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
   function handleSubmit(e) {
@@ -9,7 +11,7 @@ export default function UncontrolledForm() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label for="username">
+      <label>
         Username
         <input
           type="text"
@@ -17,7 +19,7 @@ export default function UncontrolledForm() {
           value={username}
           onChange={(e) => setUserName(e.target.value)}></input>
       </label>
-      <label for="password">
+      <label>
         Password
         <input
           name="password"
