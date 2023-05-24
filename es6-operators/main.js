@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
-const v1 = { value: 'Something' };
-const v2 = '';
+const v1 = true;
+const v2 = false;
 const v3 = undefined;
 const v4 = [3, 5, 7, 9];
 
