@@ -10,7 +10,7 @@ body {
 }
 
 div {
-  padding: 2rem;
+  padding: 1rem;
   border-width: 0.5rem;
 }
 
@@ -21,4 +21,5 @@ section {
 
 h3 {
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
