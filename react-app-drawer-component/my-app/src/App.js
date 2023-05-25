@@ -1,24 +1,17 @@
 import DrawerComponent from './DrawerComponent';
-import './App.css';
+import { useState } from 'react';
 
-const items = [
-  {
-    number: '001',
-    name: 'About',
-  },
-  {
-    number: '002',
-    name: 'Get Started',
-  },
-  {
-    number: '003',
-    name: 'Sign in',
-  },
-];
+const items = ['About', 'foo', 'bar'];
 const heading = 'Menu';
 
 function App() {
-  return <DrawerComponent items={items} heading={heading} />;
+  const [item, setItem] = useState('noMenuSelected');
+  return (
+    <div>
+      <DrawerComponent onSelect={setItem} items={items} heading={heading} />
+      <h1>{item}</h1>
+    </div>
+  );
 }
 
 export default App;

@@ -1,38 +1,45 @@
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
+import './DrawerComponent.css';
 
-export default function DrawerComponent({ heading, items }) {
+export default function DrawerComponent({ heading, items, onSelect }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  function toggleOpen(e) {
+  function toggleOpen() {
     setIsOpen(!isOpen);
+  }
+  function displayItem(item) {
+    toggleOpen();
+    onSelect(item);
   }
 
   return (
     <>
       <FaBars onClick={toggleOpen} className="menu-icon" />
-      <Backdrop isActive={isOpen} />
-      <Menu />
+      <Backdrop isDrawn={isOpen} onClick={toggleOpen} />
+      <Menu isOpen={isOpen}>
+        <h3 className="menu-heading">{heading}</h3>
+        <ul class="menu-items">
+          {items.map((item) => (
+            <li
+              key={item}
+              className="menu-item"
+              onClick={() => displayItem(item)}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </Menu>
     </>
   );
 }
 
-function Backdrop({ isActive, className }) {
-  if (isActive) {
-    className = `is-drawn`;
-  }
-  return <div className={`menu-shade ${className}`}></div>;
+function Backdrop({ isDrawn, onClick }) {
+  const className = isDrawn ? 'menu-shade is-drawn' : 'menu-shade';
+  return <div className={className} onClick={onClick}></div>;
 }
 
-function Menu({ onShow, isActive, className }) {
-  if (isActive) {
-    className = `is-open`;
-  }
-  return <div className={`menu-drawer ${className}`} isActive={onShow}></div>;
+function Menu({ isOpen, children }) {
+  const className = isOpen ? 'menu-drawer is-open' : 'menu-drawer';
+  return <div className={className}>{children}</div>;
 }
-
-// function listItems({onShow}){
-//   return (
-//     <h3 class='menu-items'
-//   )
-// }
