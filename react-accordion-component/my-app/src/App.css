@@ -1,0 +1,25 @@
+body {
+  max-width: 900px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  text-align: center;
+}
+
+div {
+  padding: 1rem;
+  border-width: 0.5rem;
+}
+
+section {
+  background-color: darkgray;
+  border: solid black;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
