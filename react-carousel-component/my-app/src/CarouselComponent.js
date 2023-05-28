@@ -44,7 +44,7 @@ export default function Carousel({ images }) {
         <Indicators
           count={images.length}
           onSelect={handleClick}
-          isActive={activeIndex}
+          activeIndex={activeIndex}
         />
       </div>
     </>
@@ -75,14 +75,14 @@ function CustomButton({ bkgColor = 'white', onCustomClick }) {
   );
 }
 
-function Indicators({ count, onSelect, isActive }) {
+function Indicators({ count, onSelect, activeIndex }) {
   const buttons = [];
   for (let i = 0; i < count; i++) {
     buttons.push(
       <CustomButton
         key={i}
         onCustomClick={() => onSelect(i)}
-        bkgColor={isActive === i && 'black'}
+        bkgColor={activeIndex === i && 'black'}
       />
     );
   }
