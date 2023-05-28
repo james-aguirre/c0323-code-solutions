@@ -12,6 +12,8 @@ export default function User({ userId, onCancel }) {
     async function fetchUser() {
       try {
         const res = await fetch(
+          // We use a template literal here instead of the typical get way we would in a
+          // get request
           `https://jsonplaceholder.typicode.com/users/${userId}`
         );
         if (!res.ok) {
