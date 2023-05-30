@@ -15,7 +15,7 @@ export default function Todos() {
       try {
         const res = await fetch('/api/todos');
         if (!res.ok) {
-          throw new Error('An error occurred');
+          throw new Error('An error occurred', `fetch Error ${res.status}`);
         }
         const todos = await res.json();
         setTodos(todos);
@@ -42,7 +42,10 @@ export default function Todos() {
         throw new Error('An error occurred');
       }
       const newTask = await post.json();
+      // when calling a setter with an array or an object, need to make a new copy of the object or else the setter will not re render,
+      // which is why we're de-structuring the old array with the new value on the line be
       setTodos([...todos, newTask]);
+      // setTodos ({..todos, key: 'value'}) would be the syntax for an object
     } catch (error) {
       setError(error);
     } finally {
@@ -67,6 +70,7 @@ export default function Todos() {
         throw new Error('An error occured');
       }
       const updatedTodo = await res.json();
+      //This is mow creating a new array list so when we set the new todo list it will trigger a re render
       const newTodosList = todos.map((todo, id) =>
         id === indexId ? updatedTodo : todo
       );
