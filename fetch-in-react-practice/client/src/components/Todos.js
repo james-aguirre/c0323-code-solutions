@@ -42,7 +42,10 @@ export default function Todos() {
         throw new Error('An error occurred');
       }
       const newTask = await post.json();
+      // when calling a setter with an array or an object, need to make a new copy of the object or else the setter will not re render,
+      // which is why we're de-structuring the old array with the new value on the line be
       setTodos([...todos, newTask]);
+      // setTodos ({..todos, key: 'value'}) would be the syntax for an object
     } catch (error) {
       setError(error);
     } finally {
