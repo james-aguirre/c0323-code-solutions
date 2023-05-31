@@ -4,13 +4,14 @@ import { ClientError } from './client-error.js';
 
 export function authMiddleware(req, res, next) {
   /* your code here */
-  const auth = req.get('Authorization');
-  const token = auth.split('Bearer ')[1];
-  if (token === undefined || auth === undefined) {
-    throw new Error(401, 'authentication required');
-  }
-  const isValid = jwt.verify(token, process.env.TOKEN_SECRET);
-  req.user = isValid;
+  // optional chaining operator stops operation if whatever is on the left hand side is undefined, continuing the expression will cause an crash
+  const token = req.get('Authorization')?.split('Bearer ')[1];
+  // We are checking for errors in error-middleware.js
+  // if (!token) {
+  //   throw new Error(401, 'authentication required');
+  // }
+  const payload = jwt.verify(token, process.env.TOKEN_SECRET);
+  req.user = payload;
   next();
 }
 
