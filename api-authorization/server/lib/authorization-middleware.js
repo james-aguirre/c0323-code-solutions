@@ -11,7 +11,6 @@ export function authMiddleware(req, res, next) {
   }
   const isValid = jwt.verify(token, process.env.TOKEN_SECRET);
   req.user = isValid;
-  console.log(req.user);
   next();
 }
 
