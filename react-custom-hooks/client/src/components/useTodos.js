@@ -37,6 +37,8 @@ export function useTodos() {
      * Note that it is critical that you pass a _new_ array. Do not modify the `todos` array.
      */ try {
       const addedTodo = await createTodo(newTodo);
+      // if you dont structure a new array with the spread operator and just add to the todos array,
+      // it won't trigger a re render
       setTodos([...todos, addedTodo]);
     } catch (err) {
       setError(err);
