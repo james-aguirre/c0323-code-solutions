@@ -1,6 +1,12 @@
 export default function countValues(stack) {
-  if (stack[0] === undefined) {
-    return 0;
+  if (stack.peek() === undefined) {
+    return -Infinity;
   }
-  return stack.length;
+  let count = stack.pop();
+  while (stack.peek() !== undefined) {
+    if (stack.pop() > count) {
+      count = stack.pop();
+    }
+  }
+  return count;
 }

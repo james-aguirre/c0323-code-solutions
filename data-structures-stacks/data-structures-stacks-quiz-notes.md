@@ -7,9 +7,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What does the acronym LIFO mean?
   Last in first out, the last thing 'pushed' into the stack will be the first thing 'popped' out
 - What methods are available on a Stack data structure?
-  Pop, push, shift, unshift, map , splice, slice,
+  Pop, push, peek
 - What must you do to access the value at an arbitrary point in a stack (not just the "top")?
-  Loop through it, use a built in method, or access it by index key
+  Stacks are more linear and can only be accessed once at a time so acessing by index doesnt work, you have to pop and push
 
 ## Notes
 
