@@ -1,18 +1,16 @@
-// import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
-// export default function Counter() {
-//   const [counter, setCounter] = useState(0);
-//   useEffect(() => {
-//     fun();
-//     setCounter((prev) => prev + 1);
-//   }, []);
+export default function Counter() {
+  const [counter, setCounter] = useState(0);
+  const getData = useCallback(() => {
+    // fetch data
+    return { foo: 'bar' };
+  }, []);
 
-//   const fun = useCallback(() => {
-//     function getData() {
-//       // fetch data
-//       return { foo: 'bar' };
-//     }
-//   });
+  useEffect(() => {
+    setCounter((prev) => prev + 1);
+    getData();
+  }, [getData]);
 
-//   return <div>Fetching {counter} times</div>;
-// }
+  return <div>Fetching {counter} times</div>;
+}
