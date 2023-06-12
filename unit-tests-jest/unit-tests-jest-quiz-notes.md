@@ -5,13 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are unit tests?
-  Units tests are ways of testing small pieces of code that can be insolated in a system for speed and efficiency
+  A way of testing a small piece of code isolated
 - Why is it important to write unit tests?
-  To check code speed and efficiency
+  To test for code efficiency and bugs
 - What code should be tested with a unit test? What code is not well suited for unit tests?
-  Smaller pieces of code like functions or a class
+  Code like functions or classes, code not suited to testing is if it talks across the network or to the database, if they rely on external systems
 - What is Jest? What are some other popular JavaScript unit testing frameworks?
-  Jest is a unit testing framework, JUnit, TestComplete and SUnit
+  Its a unit testing software, others are TestComplete, Sunit
 
 ## Notes
 
