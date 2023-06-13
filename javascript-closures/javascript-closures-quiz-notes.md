@@ -5,16 +5,17 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - In JavaScript, when is scope determined?
-  When the code is executed unless its on the global scope
+  At parse time (lexical scope) (where can i legally access the variable)
 - What allows JavaScript functions to "remember" variables from their surroundings?
-  JavaScript closures
+  JavaScript creates a closure that
 - What values does a closure contain?
-  variables that were in scope of it at the time of creation
-- When is a closure created?
+  variables that were in scope of it at the time of creation/ and variables that get accessed/referenced outside of a function
+- When is a function is referenced that accesses an outside variable
   When a function definition is evaluated
 - How can you tell if a function will be created as a closure?
-  If its nested within another function
+  Because it contains references to variables in its surrounding scope (outside its own scope), everytime a function is referenced a closure gets created
 - In React, what is one important case where you need to know if a closure was created?
+  When adding a function as a `useEffect` dependency
 
 ## Notes
 
